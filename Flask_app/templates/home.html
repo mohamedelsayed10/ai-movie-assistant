@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie AI Assistant</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 42px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 18px;
+            opacity: 0.9;
+        }
+
+        .features {
+            padding: 60px 40px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .feature-card {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+            transition: all 0.3s;
+            cursor: pointer;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .feature-icon {
+            font-size: 64px;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .feature-card h2 {
+            font-size: 24px;
+            color: #667eea;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .feature-card p {
+            font-size: 16px;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .feature-card .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 30px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 25px;
+            font-weight: 600;
+            transition: all 0.3s;
+            border: none;
+            cursor: pointer;
+        }
+
+        .feature-card .btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        .footer {
+            background: #f5f5f5;
+            padding: 20px;
+            text-align: center;
+            color: #666;
+            font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 32px;
+            }
+
+            .features {
+                padding: 40px 20px;
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Movie AI Assistant</h1>
+            <p>Your intelligent companion for movies - Chat, Analyze, and Discover</p>
+        </div>
+
+        <div class="features">
+            <!-- Chat Feature -->
+            <a href="/chatbot" class="feature-card">
+                <span class="feature-icon">💬</span>
+                <h2>AI Chat Assistant</h2>
+                <p>
+                    Have a conversation with our AI assistant. 
+                </p>
+                <button class="btn">Start Chatting</button>
+            </a>
+
+            <!-- Genre Prediction -->
+            <a href="/genre-prediction" class="feature-card">
+                <span class="feature-icon">🎭</span>
+                <h2>Genre Prediction</h2>
+                <p>
+                    Paste a movie plot and our AI will predict its genres.
+                </p>
+                <button class="btn">Predict Genres</button>
+            </a>
+
+            <!-- Plot Summarizer -->
+            <a href="/plot-summarizer" class="feature-card">
+                <span class="feature-icon">📝</span>
+                <h2>Plot Summarizer</h2>
+                <p>
+                    Got a long movie plot? Let our AI summarize it into 
+                    2-3 concise sentences without spoilers.!
+                </p>
+                <button class="btn">Summarize Plot</button>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

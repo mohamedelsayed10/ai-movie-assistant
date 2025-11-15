@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Chatbot</title>
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='css/favicon.ico') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <h1>Movie Chatbot</h1>
+            <div class="mode-toggle">
+                <button class="new-chat-btn" onclick="newChat()">New Chat</button>
+                <button class="logs-btn" onclick="toggleLogs()">📋 Logs</button>
+                <button class="mode-btn active" data-mode="text">💬 Text</button>
+                <button class="mode-btn" data-mode="voice">🎤 Voice</button>
+            </div>
+        </div>
+
+        <div class="chat-messages" id="chatMessages">
+            <div class="message bot">
+                <div class="message-content">
+                    Hello! I'm your AI assistant. How can I help you today?
+                </div>
+            </div>
+        </div>
+
+        <div class="chat-input-container">
+            <div class="text-input-area" id="textInputArea">
+                <input type="text" id="messageInput" placeholder="Type your message..." />
+                <button class="send-btn" onclick="sendMessage()">Send</button>
+            </div>
+
+            <div class="voice-input-area" id="voiceInputArea">
+                <button class="record-btn" id="recordBtn" onclick="startRecording()">🎤</button>
+                <button class="stop-btn" id="stopBtn" onclick="stopRecording()" style="display: none;">⏹</button>
+                <div class="recording-indicator" id="recordingIndicator" style="display: none;">
+                     Recording...
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Logs Modal -->
+    <div class="logs-modal" id="logsModal">
+        <div class="logs-content">
+            <div class="logs-header">
+                <h2> Response Logs</h2>
+                <button class="close-logs-btn" onclick="toggleLogs()">✕</button>
+            </div>
+            <div class="logs-body" id="logsBody">
+                <p class="no-logs">No logs yet. Send a message to see the full response data.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/chatbot.js') }}"></script>
+</body>
+</html>

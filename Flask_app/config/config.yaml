@@ -1,0 +1,26 @@
+models:
+  llm:
+    name: "gemini-2.5-flash"
+    
+    temperature: 0.2
+  embedding:
+    name: "embed-multilingual-v3.0"
+    sample_size: 100
+
+chunking:
+  chunk_size: 1000
+  chunk_overlap: 200
+
+tracing:
+  enabled: true
+  end_point: "https://api.smith.langchain.com"
+  project_name: "Movie Agent"
+
+data_paths:
+  vector_store_path: "data/vector_store/faiss_index"
+  csv_path : "data/clean_wiki_movies.csv"
+
+speech:
+  voice: "JBFqnCBsd6RMkjVDRZzb"
+  tts_model: "eleven_multilingual_v2"
+  asr_model: "scribe_v1"
