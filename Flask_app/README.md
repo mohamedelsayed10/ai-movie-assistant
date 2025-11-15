@@ -19,7 +19,7 @@ The AI Movie Assistant Application is a  conversational AI system designed to pr
 ├── config/                 
 │   └── config.yaml
 ├── data/                   
-│   ├── MOVIES_PLOT.CSV/               # Documents for RAG
+│   ├── MOVIES_PLOT.CSV/               # Documents for RA
 │   └── vector_store/       # FAISS vector store
 │   API_setup.md 
 │   Installation_Guide.md 
@@ -27,37 +27,34 @@ The AI Movie Assistant Application is a  conversational AI system designed to pr
 │   ├── distilbert_genre_classifier/ 
 │   ├── mlb_encoder.pkl     
 │   └── genre_info.json     
-├── src/                    # Source code
-│   ├── agent/              # Chatbot interface and speech processing
-│   ├── builders/           # Database and vector store builders
+├── src/                 
+│   ├── agent/              
+│   ├── builders/       
 │   │   └── build_vectorstore.py
 │   ├── models/             ML model wrappers
 │   │   ├── __init__.py
 │   │   ├── genre_predictor.py    # Genre prediction model
 │   │   └── plot_summarizer.py    # Plot summarization model
-│   ├── tools/              # Document search tools
+│   ├── tools/         
 │   │   ├── __init__.py
-│   ├── utils/              # Utility functions
+│   ├── utils/             
 │   │   ├── __init__.py
 │   │   ├── agent_utils.py
 │   │   ├── main_functions.py
 │   │   ├── markdown_utils.py
 │   │   └── tracing_setup.py
 │   └── app.py              # Main application entry point
-├── static/                 # Static files (CSS, JS, images)
+├── static/                 
 │   ├── css/
 │   └── js/
-├── templates/              # HTML templates
-│   ├── home.html           # Landing page
-│   ├── chat.html          # Chat interface
+├── templates/           
+│   ├── home.html       
+│   ├── chat.html      
 │   ├── genre_prediction.html   
 │   └── plot_summarizer.html   
-├── .env                    # Environment variables
 ├── README.md               # Main project documentation
-├── requirements.txt.                # Python dependencies
+├── requirements.txt    
 ```
-m
-
 
 
 ## Getting Started
@@ -94,4 +91,4 @@ source myenv/bin/activate
 python src/app.py
 ```
 
-s
+
