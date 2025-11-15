@@ -122,9 +122,10 @@ The Flask application provides a user-friendly interface with:
 
 
 ###  Resources
-- **Best Genre Classification Model**: [Download from Google Drive](https://drive.google.com/drive/folders/1dRT1fTKETS0n2jarb7BSdnE6j3z5K1Ka?usp=sharing) under `flask_app/models`
+- **Best Genre Classification Model**: [Download from Google Drive](https://drive.google.com/drive/folders/1dRT1fTKETS0n2jarb7BSdnE6j3z5K1Ka?usp=sharing) put this models in `flask_app/models`
 - **Fine-tuned Model**: [Download from Google Drive](https://drive.google.com/file/d/1PHqIuvrLILrGtOwjR-dwVIxHQ7OghDLn/view?usp=sharing)
-- **Dataset**: [Clean Wiki Movies Dataset](https://drive.google.com/file/d/1JUnPKUh3AqoB-5qtwIZtaYhblq1usw7v/view?usp=sharing) under `data dir`
+- **Raw Dataset**: [Raw Wiki Movies Dataset](https://www.kaggle.com/datasets/jrobischon/wikipedia-movie-plots/data) put this data in `data`
+- **Clean Dataset**: [Clean Wiki Movies Dataset](https://drive.google.com/file/d/1JUnPKUh3AqoB-5qtwIZtaYhblq1usw7v/view?usp=sharing) put this data in `data`, `Flask_app/data`
 
 
 ## Installation
